@@ -1,0 +1,14 @@
+.table-responsive
+{
+    overflow: visible;
+}
+.new,.rebuild
+{
+    color:#ffffff !important;
+    float:right;
+    margin-left:10px;
+}
+h5
+{
+    font-size:19px;
+}
