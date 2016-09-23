@@ -756,3 +756,6 @@ function _init() {
     });
   };
 }(jQuery));
+$(document).ready(function(){
+  $(document).ajaxStart(function() { Pace.restart(); });
+});
