@@ -14,4 +14,11 @@ $(document).ready(function(){
             });
         });
     });
+    // collapse and expanded modules
+    $('.author').click(function(){
+        $(this).find('i').eq(0).toggleClass('fa-angle-down').toggleClass('fa-angle-left');
+        var name = $(this).attr('id');
+        $('.'+name).toggleClass('hidden');
+    });
 });
+

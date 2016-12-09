@@ -15,4 +15,25 @@ $(document).ready(function () {
             }
         });
     });
+    $('table tbody').sortable({
+        update: function( event, ui ) {
+             var data = $(this).sortable('serialize');
+            $.ajax({
+                type:'POST',
+                url:list_positions_update,
+                dataType:'json',
+                data:data+'&_token='+_token+'&controller='+controller+'&module='+module,
+                success:function(dataJson){
+                    if(dataJson.status=='success')
+                    {
+                        $.growl.notice({title:'',message:dataJson.msg});
+                    }
+                    else
+                    {
+                        $.growl.error({title:'',message:dataJson.msg});
+                    }
+                }
+            })
+        }
+    });
 });
