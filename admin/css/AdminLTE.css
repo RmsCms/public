@@ -1720,6 +1720,7 @@ a:focus {
   display: block;
   padding: 10px;
   position: relative;
+  border-bottom: 1px solid #eaeaea;
 }
 .box-header.with-border {
   border-bottom: 1px solid #f4f4f4;
@@ -4912,4 +4913,41 @@ table.text-center th {
   .table-responsive > .table tr td {
     white-space: normal !important;
   }
+}
+/******************** custom style *********************/
+.table > thead > tr > th {
+    vertical-align: middle;
+}
+.box-body > .table input.text,
+.box-body > .table input[type=text] {
+    border: 1px solid #d2d6de;
+    border-radius: 2px;
+    padding: 1px 4px;
+}
+.box-body > .table input.datepicker {
+    margin: 0 auto 4px;
+    display: block;
+}
+.box-body > .table input:focus {
+    border: 1px solid #3c8dbc;
+    outline: none;
+}
+.bootstrap-switch.bootstrap-switch-focused {
+    box-shadow: inherit;
+}
+.bootstrap-switch.bootstrap-switch-on {
+    border: 1px solid #5cb85c;
+}
+.bootstrap-switch.bootstrap-switch-off {
+    border: 1px solid #d9534f;
+}
+.bootstrap-switch {
+    border-radius: 0;
+}
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off {
+    border-radius: 0;
+}
+.box-footer button {
+    margin-left: 4px;
 }
