@@ -1,4 +1,97 @@
-body
+/********** general **********/
+html, body
 {
-    color:red;
+    direction: rtl;
+    text-align: right;
+    font-family: tahoma;
+    font-size: 12px;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+    font-size: 12px;
+}
+.btn {
+    font-size: 12px;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9,
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    float: right;
+}
+/********** AdminLTE **********/
+.pull-right {
+    float: left !important;
+}
+.pull-left {
+    float: right !important;
+}
+.main-header .logo {
+    float: right;
+    font-family: tahoma;
+}
+.main-header > .navbar {
+    margin-left: 0;
+    margin-right: 230px;
+}
+.main-header .sidebar-toggle {
+    float: right;
+}
+.main-header .navbar-custom-menu,
+.main-header .navbar-right {
+    float: left;
+}
+.main-sidebar,
+.left-side {
+    left: auto;
+    right: 0;
+}
+.content-wrapper,
+.right-side,
+.main-footer {
+    margin-left: 0;
+    margin-right: 230px;
+}
+.sidebar-menu li > a > .pull-right {
+    left: 10px;
+    right: auto;
+}
+.sidebar-menu li > a > .fa-caret-right:before {
+    content: "\f0d9";
+}
+.sidebar-menu li.active > a > .fa-caret-right {
+    transform: rotate(-90deg);
+}
+.box-header a.btn,
+.box-header button.btn {
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+}
+.box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+    float: right;
+}
+.box-header > .box-tools {
+    float: left;
+}
+@media (min-width: 768px) {
+    /********** bootstrap **********/
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+    /********** AdminLTE **********/
+    .sidebar-mini.sidebar-collapse .main-header .navbar {
+        margin-left: 0;
+        margin-right: 50px;
+    }
+    .sidebar-mini.sidebar-collapse .content-wrapper,
+    .sidebar-mini.sidebar-collapse .right-side,
+    .sidebar-mini.sidebar-collapse .main-footer {
+        margin-left: 0 !important;
+        margin-right: 50px !important;
+    }
 }
