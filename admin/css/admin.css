@@ -7,12 +7,6 @@
     background-color: #85d27a;
     border-color: #85d27a;
 }
-.table > thead > tr > th {
-    vertical-align: middle;
-}
-.table > thead .actions {
-    text-align: center;
-}
 .box-body > .table input.text,
 .box-body > .table input[type=text] {
     border: 1px solid #d2d6de;
@@ -45,6 +39,37 @@
 }
 .box-footer button {
     margin-left: 4px;
+}
+.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.tab-content {
+    padding: 10px 0;
+}
+.tabs-left {
+    padding: 10px 0;
+}
+/********** table **********/
+.table > thead > tr > th {
+    vertical-align: middle;
+}
+.table > thead .actions {
+    text-align: center;
+}
+.table > thead .filters_btn {
+    text-align: center;
+}
+.table > tbody .no_data {
+    padding: 10px;
+}
+.table > tbody > tr > td,
+.table > tbody >tr > th,
+.table > tfoot >tr > td,
+.table > tfoot >tr > th,
+.table > thead >tr > td,
+.table > thead >tr > th {
+    vertical-align: middle;
 }
 /********** header **********/
 .content-wrapper .breadcrumb {
