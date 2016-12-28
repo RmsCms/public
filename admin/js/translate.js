@@ -19,6 +19,7 @@ $(document).ready(function(){
                     $.each(dataJson.files,function(e,item){
                         $('#file').append($('<option>', {value:item, text:item}));
                     });
+                    $('#file').closest('div.form-group').removeClass('hidden');
                     $('#file').parent('div').removeClass('hidden');
                     $('#file').select2({width:'50%'});
                     $('#load').removeClass('hidden');
