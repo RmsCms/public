@@ -24,6 +24,9 @@ html, body
     float: right;
 }
 /********** AdminLTE **********/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "tahoma";
+}
 .pull-right {
     float: left !important;
 }
@@ -66,6 +69,9 @@ html, body
 .sidebar-menu li.active > a > .fa-caret-right {
     transform: rotate(-90deg);
 }
+.sidebar-menu .treeview-menu > li > a {
+    font-size: 12px;
+}
 .box-header a.btn,
 .box-header button.btn {
     float: left;
@@ -77,6 +83,38 @@ html, body
 }
 .box-header > .box-tools {
     float: left;
+}
+.dropdown-menu {
+    left: 0;
+    right: auto;
+}
+/********** auth **********/
+#auth input {
+    padding-left: 12px;
+    padding-right: 38px;
+}
+#auth .username .icon,
+#auth .password .icon {
+    left: auto;
+    right: 0;
+}
+#auth .checkbox {
+    float: right;
+}
+#auth .login-btn {
+    float: left;
+}
+/********** settings **********/
+.nav-tabs > li {
+    float: right;
+}
+.nav-tabs > li > a {
+    margin-right: 0;
+    margin-left: 2px;
+}
+.select2-container {
+    direction: ltr;
+    text-align: left;
 }
 @media (min-width: 768px) {
     /********** bootstrap **********/

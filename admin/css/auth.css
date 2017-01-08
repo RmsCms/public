@@ -1,0 +1,83 @@
+body {
+    background-color: #f5f5f5;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+#auth *:focus {
+    outline: none;
+}
+#auth .login-box {
+    display: block;
+    margin: 10% auto 0;
+    width: 360px;
+    background-color: #ffffff;
+}
+#auth .login-head {
+    background-color: #fafafa;
+    border-top: 10px solid #4a89dc;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+}
+#auth .title {
+    color: #999999;
+    padding: 16px 10px;
+}
+#auth .login-body {
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+#auth .username,
+#auth .password {
+    position: relative;
+}
+#auth .username .icon,
+#auth .password .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#auth .username .icon::before,
+#auth .password .icon::before {
+    content: "";
+    color: #bbbbbb;
+    font-size: 16px;
+    font-family: "FontAwesome";
+    display: block;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+}
+#auth .username .icon::before {content: "\f007"}
+#auth .password .icon::before {content: "\f023"}
+#auth input {
+    border-radius: 0;
+    box-shadow: inherit;
+    border: 1px solid #dddddd;
+    padding-left: 38px;
+}
+#auth .checkbox {
+    float: left;
+}
+#auth .checkbox label {
+    padding: 0;
+}
+#auth .login-btn {
+    background-color: #5d9cec;
+    border: medium none;
+    color: #ffffff;
+    padding: 10px;
+    float: right;
+    width: 100px;
+}
+#auth .forget-pwd {
+    text-align: center;
+}
+#auth .copyright {
+    display: block;
+    font-size: 10px;
+    margin: 4px auto 0;
+    width: 360px;
+    text-align: center;
+}

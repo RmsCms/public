@@ -104,9 +104,17 @@
 .skin-blue .sidebar-menu > li > .treeview-menu {
     background-color: #282d33;
 }
+.skin-blue .sidebar-menu > li.header {
+    background-color: #30363e;
+    color: #70829a;
+    font-size: 14px;
+}
 /********** content wrapper **********/
 .content-wrapper, .right-side {
     background-color: #e9e9e9;
+}
+.table .icon_position {
+    margin: auto;
 }
 /********** modules **********/
 .box-header > .box-tools {
