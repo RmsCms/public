@@ -39,4 +39,9 @@ CKEDITOR.editorConfig = function( config ) {
 	// add more plugins
 	config.extraPlugins = 'lineutils,widget,codesnippet';
 
+	config.contentsLangDirection = contentsLangDirection;
+	config.contentsLanguage = cke_lang;
+	config.language = cke_lang;
+	config.dialog_buttonsOrder = contentsLangDirection;
+
 };
