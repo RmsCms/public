@@ -37,11 +37,13 @@ CKEDITOR.editorConfig = function( config ) {
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 	config.filebrowserBrowseUrl = eldifnder_url;
 	// add more plugins
-	config.extraPlugins = 'lineutils,widget,codesnippet';
-
+	config.extraPlugins = 'lineutils,widget,codesnippet,justify,sourcedialog';
 	config.contentsLangDirection = contentsLangDirection;
 	config.contentsLanguage = cke_lang;
 	config.language = cke_lang;
 	config.dialog_buttonsOrder = contentsLangDirection;
-
+	config.allowedContent = true;
+	config.height = 500;        // 500 pixels high.
+	config.removeButtons = 'Source';
+	// config.enterMode = CKEDITOR.ENTER_DIV;
 };

@@ -78,6 +78,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-left: 0;
     margin-right: 10px;
 }
+.skin-blue .sidebar-menu > li > a {
+    border-left: medium none;
+    border-right: 3px solid transparent;
+}
+.skin-blue .sidebar-menu > li:hover > a,
+.skin-blue .sidebar-menu > li.active > a {
+    border-right-color: #3c8dbc;
+}
 .box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
     float: right;
 }
