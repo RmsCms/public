@@ -34,8 +34,31 @@ $(document).ready(function(){
        }
    });
     /**--------------------------------
-     * settings js
+     * end general settings
      ----------------------------------*/
+
+    /**--------------------------------
+     * start ajax settings
+     ----------------------------------*/
+    $(document).on('click','.ajax-btn',function(e){
+        e.preventDefault();
+        var element = $(this);
+        $.ajax({
+           type:'POST',
+            data:{'_token':_token,'action':element.attr('id')},
+            url:ajax_cache_url,
+            dataType:'json',
+            success:function(dataJson){
+                if(dataJson.status=='success'){
+                    $.growl.notice({title:'',message:dataJson.msg});
+                }
+                else{
+                    $.growl.error({title:'',message:dataJson.msg});
+                }
+            }
+        });
+    });
+
 });
 function loadPlugins()
 {
