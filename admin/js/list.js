@@ -6,16 +6,26 @@ $(document).ready(function () {
             title: alert_msg,
             content: false,
             theme: 'white',
-            confirm: function () {
-                var href = element.attr('href');
-                $('body').append('<form id="delete_row" action="' + href + '" method="POST">' +
-                    '<input type="hidden" name="_method" value="DELETE">' +
-                    '<input type="hidden" name="_token" value="' + _token + '"></form>');
-                $('#delete_row').submit();
+            buttons: {
+                yes: {
+                    text: 'Yes im sure',
+                    btnClass: 'btn-red',
+                    action: function () {
+                        $('body').append('<form id="delete_row" action="' + element.attr('href') + '" method="POST">' +
+                            '<input type="hidden" name="_method" value="DELETE">' +
+                            '<input type="hidden" name="_token" value="' + _token + '"></form>');
+                        $('#delete_row').submit();
+                    }
+                },
+                no: {
+                    text: 'NO',
+                    btnClass: 'btn-blue'
+                }
             }
         });
+
     });
-    $('table tbody').sortable({
+    $('.table_sortable tbody').sortable({
         update: function( event, ui ) {
              var data = $(this).sortable('serialize');
             $.ajax({
