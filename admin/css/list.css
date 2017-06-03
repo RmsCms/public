@@ -1,0 +1,6 @@
+dt, dd { display: block; float: left; margin-top: 20px; }
+dt { clear: both; }
+
+.status {
+    padding:5px;
+}

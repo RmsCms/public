@@ -581,3 +581,13 @@ button:focus {
 .form-flat .radio-inline input[type=radio] {
     margin-top: 2px;
 }
+
+.chart {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.chart svg,
+.chart canvas {
+    width: 100% !important;
+}
