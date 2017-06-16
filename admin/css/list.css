@@ -1,6 +1,17 @@
-dt, dd { display: block; float: left; margin-top: 20px; }
-dt { clear: both; }
-
+dt, dd {
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+dt { 
+    clear: both;
+}
+.dropdown-menu {
+    left: auto;
+    right: 0;
+}
 .status {
-    padding:5px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 11px;
 }

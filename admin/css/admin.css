@@ -1,5 +1,5 @@
 html, body {
-    font-family: tahoma;
+
     font-size: 12px;
     font-weight: normal;
     margin: 0;
@@ -12,21 +12,20 @@ button:focus {
     position: relative;
 }
 .header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #E2E2E2;
+    background-color: #f58023;
     min-height: 60px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
 }
 .sidebar {
+    background-color: #344756;
     width: 240px;
     position: absolute;
     left: 0;
-    height: 100%;
-    background-color: #30363e;
+    min-height: 100%;
     padding-top: 60px;
 }
 .content {
@@ -39,8 +38,7 @@ button:focus {
     padding: 20px;
 }
 .breadcrumb {
-    background-color: #fafafa;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #3f5467;
     border-radius: 0;
     margin-bottom: 0;
     min-height: 46px;
@@ -56,7 +54,7 @@ button:focus {
     margin-right: 10px;
 }
 .account .dropdown {
-    color: #666666;
+    color: #ffffff;
 }
 .account .dropdown .dropdown-toggle {
     border: medium none;
@@ -66,7 +64,7 @@ button:focus {
     line-height: 38px;
 }
 .account .dropdown .dropdown-toggle:hover {
-    background-color: #f7f7f7;
+    background-color: #ef7719;
 }
 .account .dropdown .dropdown-toggle .avatar {
     border-radius: 20px;
@@ -77,22 +75,22 @@ button:focus {
     float: right;
     margin: 18px 0 0 6px;
     display: block;
-    border-top: 4px solid #cccccc;
+    border-top: 4px solid #ffffff;
 }
 .account .dropdown .dropdown-menu::before {
     content: "";
     border-top: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid #b8b8b8;
+    border-bottom: 6px solid #ffffff;
     border-left: 6px solid transparent;
     position: absolute;
-    top: -16px;
+    top: -12px;
     right: 14px;
 
 }
 .account .dropdown .dropdown-menu {
-    border: 1px solid #b8b8b8;
-    border-top: 4px solid #b8b8b8;
+    border: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
     border-radius: 0;
     margin: 0;
     padding: 0;
@@ -149,21 +147,24 @@ button:focus {
     line-height: 38px;
 }
 .notification .dropdown .dropdown-toggle:hover {
-    background-color: #f7f7f7;
+    background-color: #ef7719;
 }
 .notification .dropdown .dropdown-toggle i {
-    color: #777777;
+    color: #ffffff;
     font-size: 18px;
 }
 .notification .dropdown .dropdown-toggle .badge {
+    background-color: #3f5467;
     position: absolute;
     padding: 2px 6px 3px 5px;
-    background-color: #ec6f5a;
     top: 14px;
-    right: -6px;
+    right: 2px;
     font-size: 10px;
     font-weight: normal;
     font-family: tahoma;
+}
+.notification .dropdown .dropdown-toggle .new{
+    background-color: #dc143c !important;
 }
 .notification .dropdown .dropdown-toggle .avatar {
     border-radius: 20px;
@@ -180,16 +181,16 @@ button:focus {
     content: "";
     border-top: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid #b8b8b8;
+    border-bottom: 6px solid #ffffff;
     border-left: 6px solid transparent;
     position: absolute;
-    top: -16px;
+    top: -12px;
     right: 14px;
 
 }
 .notification .dropdown .dropdown-menu {
-    border: 1px solid #b8b8b8;
-    border-top: 4px solid #b8b8b8;
+    border: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
     border-radius: 0;
     margin: 0;
     padding: 0;
@@ -262,30 +263,32 @@ button:focus {
     float: left;
 }
 .breadcrumb ul li {
-    color: #888888;
+    color: #859cae;
     float: left;
     padding: 0 10px 0 0;
     margin: 0 10px 0 0;
     position: relative;
+    line-height: 18px;
 }
 .breadcrumb ul li::after {
-    content: "/";
+    content: "\f105";
+    font-family: "FontAwesome";
     position: absolute;
     top: 0;
     right: -2px;
-    font-size: 9px;
-    color: #888888;
-    line-height: 19px;
+    font-size: 12px;
+    color: #859cae;
+    line-height: 18px;
 }
 .breadcrumb ul li:last-child::after {
     display: none;
 }
 .breadcrumb ul li a {
-    color: #4a89dc;
+    color: #adbcc7;
     cursor: pointer;
 }
 .breadcrumb ul li a:hover {
-    color: #4a89dc;
+    color: #adbcc7;
 }
 /******************** sidebar ********************/
 .sidebar ul {
@@ -473,6 +476,7 @@ button:focus {
     display: block;
     margin: auto;
     padding: 2px 4px;
+    width: 100%;
 }
 .filter .dropdown .dropdown-toggle {
     background-color: transparent;
@@ -489,6 +493,10 @@ button:focus {
 }
 .filter-date input:first-child {
     margin-bottom: 4px;
+}
+.actions {}
+.actions .btn-group {
+    min-width: 98px;
 }
 .action .dropdown {
     display: inline-block;
