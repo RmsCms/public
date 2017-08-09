@@ -23,6 +23,97 @@ html, body
 .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     float: right;
 }
+.btn.pull-left {
+    margin-left: 4px;
+    margin-right: 0;
+}
+.btn.pull-right {
+    margin-right: 4px;
+    margin-left: 0;
+}
+.actions .btn-group {
+    min-width: 84px;
+}
+/********** layout **********/
+.header .logo {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.header .account {
+    float: left;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.header .notification {
+    float: left;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.content {
+    padding-right: 240px;
+    padding-left: inherit;
+}
+/********** account **********/
+.account .dropdown .dropdown-menu {
+    left: 0;
+    right: auto;
+}
+.account .dropdown .dropdown-menu::before {
+    left: 14px;
+    right: auto;
+}
+/********** notification **********/
+.notification .dropdown .dropdown-menu {
+    left: 0;
+    right: auto;
+}
+.notification .dropdown .dropdown-menu::before {
+    left: 14px;
+    right: auto;
+}
+/********** sidebar **********/
+.sidebar {
+    right: 0;
+    left: auto;
+}
+.sidebar .sub-menu {
+    padding-right: 20px;
+    padding-left: 0;
+}
+.sidebar ul li.title {
+    padding-right: 20px;
+    padding-left: inherit;
+}
+.sidebar ul li a i {
+    margin-left: 8px;
+    margin-right: inherit;
+}
+.sidebar ul li a i.fa.fa-angle-right::before {
+    content: "\f104";
+}
+/********** beadcrumb **********/
+.breadcrumb ul {
+    float: right;
+}
+.breadcrumb ul li {
+    float: right;
+    padding: 0 0 0 10px;
+    margin: 0 0 0 10px;
+}
+.breadcrumb ul li::after {
+    content: "\f104";
+    left: -2px;
+    right: auto;
+}
+/********** table **********/
+.table-panel caption a {
+    float: left;
+}
+/********** Bootstrap **********/
+caption {
+    text-align: right;
+}
 /********** AdminLTE **********/
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "tahoma";

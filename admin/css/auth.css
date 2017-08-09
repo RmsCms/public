@@ -1,8 +1,14 @@
+/*- general ************************************************************/
 body {
     background-color: #f5f5f5;
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+input[name="password"], 
+input[name="email"] {
+    direction: ltr !important;
+    text-align: left;
 }
 #auth *:focus {
     outline: none;

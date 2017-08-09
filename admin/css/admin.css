@@ -1,5 +1,4 @@
 html, body {
-
     font-size: 12px;
     font-weight: normal;
     margin: 0;
@@ -12,7 +11,7 @@ button:focus {
     position: relative;
 }
 .header {
-    background-color: #f58023;
+    background-color: #2a3b48;
     min-height: 60px;
     position: absolute;
     top: 0;
@@ -64,7 +63,7 @@ button:focus {
     line-height: 38px;
 }
 .account .dropdown .dropdown-toggle:hover {
-    background-color: #ef7719;
+    background-color: #3f5467;
 }
 .account .dropdown .dropdown-toggle .avatar {
     border-radius: 20px;
@@ -147,7 +146,7 @@ button:focus {
     line-height: 38px;
 }
 .notification .dropdown .dropdown-toggle:hover {
-    background-color: #ef7719;
+    background-color: #3f5467;
 }
 .notification .dropdown .dropdown-toggle i {
     color: #ffffff;

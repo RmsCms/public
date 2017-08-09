@@ -1,0 +1,22 @@
+.form-box {
+    direction: rtl;
+    text-align: right;
+}
+.form-top {
+    text-align: right;
+}
+.form-top-left {
+    float: right;
+}
+.form-top-right {
+    float: left;
+    text-align: left;
+}
+.form-bottom {
+    text-align: right;
+}
+input[type="password"],
+input[type="email"] {
+    direction: rtl;
+    text-align: left;
+}
