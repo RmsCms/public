@@ -7,7 +7,8 @@ jQuery(document).ready(function() {
 	$.backstretch([
 		bg_img+'/1.jpg',
 		bg_img+'/2.jpg',
-		bg_img+'/3.jpg'
+		bg_img+'/3.jpg',
+		bg_img+'/4.jpg'
 
 	], {duration: 3000, fade: 750});
     

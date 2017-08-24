@@ -1,3 +1,4 @@
+/*- general ************************************************************/
 html, body {
     font-size: 12px;
     font-weight: normal;
@@ -10,6 +11,14 @@ button:focus {
 .wrapper {
     position: relative;
 }
+.dir-ltr {
+    direction: ltr;
+}
+.block-dir-ltr {
+    display: inline-block;
+    direction: ltr;
+}
+/*- header ************************************************************/
 .header {
     background-color: #2a3b48;
     min-height: 60px;

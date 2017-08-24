@@ -1,3 +1,38 @@
+/*- general ************************************************************/
+@font-face {
+    font-family: 'vazir';
+    src: url('../../modules/cobonto/ticket/fonts/Vazir.eot'); /* IE9 Compat Modes */
+    src: url('../../modules/cobonto/ticket/fonts/Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../modules/cobonto/ticket/fonts/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../modules/cobonto/ticket/fonts/Vazir.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../modules/cobonto/ticket/fonts/Vazir.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'shabnam';
+    src: url('../../modules/cobonto/ticket/fonts/Shabnam.eot'); /* IE9 Compat Modes */
+    src: url('../../modules/cobonto/ticket/fonts/Shabnam.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../modules/cobonto/ticket/fonts/Shabnam.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../modules/cobonto/ticket/fonts/Shabnam.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'iransans';
+    src: url('../../modules/cobonto/ticket/fonts/IRANSansWeb.eot'); /* IE9 Compat Modes */
+    src: url('../../modules/cobonto/ticket/fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../modules/cobonto/ticket/fonts/IRANSansWeb.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../modules/cobonto/ticket/fonts/IRANSansWeb.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../modules/cobonto/ticket/fonts/IRANSansWeb.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'iransansfanum';
+    src: url('../../modules/cobonto/ticket/fonts/IRANSansWebFaNum.eot'); /* IE9 Compat Modes */
+    src: url('../../modules/cobonto/ticket/fonts/IRANSansWebFaNum.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../modules/cobonto/ticket/fonts/IRANSansWebFaNum.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../modules/cobonto/ticket/fonts/IRANSansWebFaNum.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../modules/cobonto/ticket/fonts/IRANSansWebFaNum.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+body {
+    font-family: "vazir" !important;
+}
 .form-box {
     direction: rtl;
     text-align: right;
@@ -16,7 +51,15 @@
     text-align: right;
 }
 input[type="password"],
-input[type="email"] {
-    direction: rtl;
+input[name="email"],
+input[name="mobile"] {
+    direction: ltr;
     text-align: left;
+}
+/*- general ************************************************************/
+@media (max-width: 510px) {
+    .login-form .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

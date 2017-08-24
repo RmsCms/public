@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // load tabs
     var tabs = ['#profile_1'];
-    $('.nav-tabs a').click(function(){
+    $('.roles a').click(function(){
         var id = $(this).attr('href');
         var _this = $(this);
 

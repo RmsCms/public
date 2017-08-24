@@ -8,7 +8,7 @@ $(document).ready(function () {
             theme: 'white',
             buttons: {
                 yes: {
-                    text: 'Yes im sure',
+                    text: 'بله مطمئنم',
                     btnClass: 'btn-red',
                     action: function () {
                         $('body').append('<form id="delete_row" action="' + element.attr('href') + '" method="POST">' +
@@ -18,7 +18,7 @@ $(document).ready(function () {
                     }
                 },
                 no: {
-                    text: 'NO',
+                    text: 'خیر',
                     btnClass: 'btn-blue'
                 }
             }

@@ -1,9 +1,17 @@
 /********** general **********/
+@font-face {
+  font-family: 'iransansfanum';
+  src: url('fonts/IRANSansWebFaNum.eot'); /* IE9 Compat Modes */
+  src: url('fonts/IRANSansWebFaNum.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/IRANSansWebFaNum.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/IRANSansWebFaNum.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/IRANSansWebFaNum.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
 html, body
 {
     direction: rtl;
     text-align: right;
-    font-family: tahoma;
+    font-family: "iransansfanum";
     font-size: 12px;
 }
 .table > tbody > tr > td,
@@ -116,7 +124,7 @@ caption {
 }
 /********** AdminLTE **********/
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "tahoma";
+    font-family: "iransansfanum";
 }
 .pull-right {
     float: left !important;
@@ -126,7 +134,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .main-header .logo {
     float: right;
-    font-family: tahoma;
+    font-family: "iransansfanum";
 }
 .main-header > .navbar {
     margin-left: 0;
