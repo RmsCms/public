@@ -331,7 +331,27 @@ button:focus {
 .sidebar .sub-menu {
     background-color: #282d33;
     display: none;
+}
+.sidebar .sub-menu li {
     padding-left: 20px;
+}
+.sidebar .sub-menu li.active a {
+    color: #5fa5e4;
+}
+/*- toolbar ************************************************************/
+.toolbar {
+    background-color: #fafafa;
+    border-radius: 2px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.toolbar .toolbar-title {
+    float: left;
+    font-size: 22px;
+}
+.toolbar .toolbar-buttons {
+    float: right;
 }
 /******************** errors ********************/
 .page-content .errors {}
@@ -401,7 +421,7 @@ button:focus {
     color: #ffffff;
     background-color: #b09ae4;
 }
-/******************** additional button ********************/
+/******************** table panel ********************/
 .table-panel {
     border: 1px solid #e5e5e5;
 }
@@ -573,6 +593,9 @@ button:focus {
 .panel-flat .panel-heading {
     border-bottom: 1px solid #e5e5e5;
     background-color: #fafafa;
+}
+.panel-flat .panel-heading .panel-buttons {
+    float: right;
 }
 .panel-flat .panel-body {}
 .panel-flat .panel-footer {

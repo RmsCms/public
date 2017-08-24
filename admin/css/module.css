@@ -1,17 +1,20 @@
-.table-responsive
-{
-    overflow: visible;
+/*- panel modules ************************************************************/
+.panel-module {}
+.panel-module .panel-heading {
+    font-size: 14px;
+    font-weight: bold;
 }
-.new,.rebuild
-{
-    color:#ffffff !important;
-    float:right;
-    margin-left:10px;
+/*- table modules ************************************************************/
+.table-module {
+    margin: 0;
 }
-h5
-{
-    font-size:19px;
+.table-module thead tr th,
+.table-module tbody tr td {
+    vertical-align: middle;
 }
-.author{
-    cursor: pointer;
+.table-module thead tr  th.version,
+.table-module thead tr  th.actions,
+.table-module tbody tr  td.version,
+.table-module tbody tr  td.actions {
+    text-align: center;
 }
