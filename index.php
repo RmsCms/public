@@ -1,12 +1,11 @@
 <?php
-
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
- * @author   Taylor Otwell <taylorotwell@gmail.com>
+ * @author   Taylor Otwell <taylor@laravel.com>
  */
-
+define('LARAVEL_START', microtime(true));
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -15,11 +14,10 @@
 | Composer provides a convenient, automatically generated class loader for
 | our application. We just need to utilize it! We'll simply require it
 | into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels nice to relax.
+| loading any of our classes later on. It feels great to relax.
 |
 */
-
-require __DIR__.'/../../fitness/bootstrap/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
@@ -31,13 +29,7 @@ require __DIR__.'/../../fitness/bootstrap/autoload.php';
 | the responses back to the browser and delight our users.
 |
 */
-
-$app = require_once __DIR__.'/../../fitness/bootstrap/app.php';
-
-// set the public path to this directory
-$app->bind('path.public', function() {
-    return __DIR__;
-});
+$app = require_once __DIR__.'/../bootstrap/app.php';
 /*
 |--------------------------------------------------------------------------
 | Run The Application
@@ -49,13 +41,9 @@ $app->bind('path.public', function() {
 | and wonderful application we have prepared for them.
 |
 */
-
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
-
 $response->send();
-
 $kernel->terminate($request, $response);
